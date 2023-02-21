@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    </head>
+    <body>
+            <h1 id="title">Food/Restaurant Survey Form</h1>
+<p id="description"><i>Thank you for taking the time to help us to get an idea of Favourite food of yours </i> </p>
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">Name: <input type="text" id="name" placeholder="please enter your name" required /></label>
+        <label id="email-label" for="email">Email: <input type="email" id="email" placeholder="please enter your email" required /></label>
+        <label id="number-label" for="number">Age: <input type="number" id="number" min="13" max="100" placeholder="please enter your age"/></label>
+    </fieldset>
+    <fieldset>
+        <label>What kind of restaurants do you like: 
+            <select id="dropdown">
+                <option>Select</option>
+                <option>Fast Food Restaurants</option>
+                <option>Cafe or Coffee Shop</option>
+                <option>Speciality Drink Shop</option>
+                <option>Buffet</option>
+                <option>Casual Restaurants</option>
+                <option>Fine Dining Restaurant</option>
+            </select>
+        </label>
+        <p class="labels">What is your spice level: </p>
+        <label><input type="radio" name="spice-level" value="hot" />Hot</label>
+        <label><input type="radio" name="spice-level" value="medium"  />Medium</label>
+        <label><input type="radio" name="spice-level" value="mild" />Mild</label>
+        <p class="labels">What type of food you prefer to eat  most of the time  (select all that apply): </p>
+        <label><input type="checkbox" value="vegtables" />Vegetables</label>
+        <label><input type="checkbox" value="fruits"  />fruits</label>
+        <label><input type="checkbox" value="grains"  />Grains, legumes, nuts and seeds</label>
+        <label><input type="checkbox" value="meat"  />Meat and poultry</label>
+        <label><input type="checkbox" value="fish"  />Fish and seafood</label>
+        <label><input type="checkbox"value="dairy"  />Dairy foods</label>
+        <label><input type="checkbox" value="eggs"  />Eggs</label>
+        <label>Do you have any food allergy?. If yes please specify here 
+            <textarea id="allergy" name="allergy" rows="5" placeholder="Enter your food allergy details"></textarea> </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit" />
+</form>
+
+<footer>
+    <p>Image from <a href="https://unsplash.com/photos/fdlZBWIP0aM">Unsplash</a></p>
+</footer>
+    </body>
+</html>
